@@ -20,6 +20,7 @@
   </head>
   <body>
     <!-- ======= Header ======= -->
+
     <header class="header">
       <div class="container nav">
         <nav class="nav">
@@ -64,9 +65,18 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn btn">Заказать услугу</button>
+          <button type="button" class="hero-btn btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-modal" data-modal-close>
+            <svg height="11" width="11" class="close-icon">
+              <use href="./images/close-modal.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!-- ======= Особенности  ======= -->
 
@@ -132,14 +142,17 @@
           <ul class="works-list">
             <li class="works-item">
               <img src="./images/box1.jpg" alt="Рабочий стол программиста" width="370" />
+              <p class="works-text">Десктопные приложения</p>
             </li>
 
             <li class="works-item">
               <img src="./images/box2.jpg" alt="Работа над адаптивной версткой" width="370" />
+              <p class="works-text">Мобильные приложения</p>
             </li>
 
             <li class="works-item">
               <img src="./images/box3.jpg" alt="Планшет дизайнера" width="370" />
+              <p class="works-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
