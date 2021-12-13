@@ -263,6 +263,12 @@ button {
 
   transition: opacity 250ms var(--timing-function);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
 .modal {
   position: absolute;
   width: 528px;
@@ -278,9 +284,7 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
